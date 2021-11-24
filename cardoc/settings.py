@@ -35,12 +35,15 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 PROJECT_APPS = [
-
+    'users',
+    'tires',
 ]
 
 THIRD_PARTY_APPS = [
     'corsheaders',
-    'rest_framework'
+    'rest_framework',
+    'rest_auth',
+    'rest_framework.authtoken'
 ]
 
 INSTALLED_APPS = [
@@ -92,13 +95,16 @@ WSGI_APPLICATION = 'cardoc.wsgi.application'
 
 DATABASES = DATABASES
 
+
 REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        # 'rest_framework.authentication.BasicAuthentication',
+        # 'rest_framework.authentication.SessionAuthentication',
     ]
 }
+
+AUTH_USER_MODEL = 'users.User'
 
 
 # Password validation

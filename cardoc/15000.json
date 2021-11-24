@@ -1,0 +1,280 @@
+{
+  "brandId": 4,
+  "brandName": "BMW",
+  "brandNameEng": "BMW",
+  "country": "DEU",
+  "isImported": true,
+  "brandImageUrl": "http://file.carisyou.com/upload/2020/04/03/FILE_202004031126290740.png",
+  "brandUrl": "http://www.bmw.co.kr/",
+  "modelId": 122,
+  "modelName": "5시리즈",
+  "submodelGroupId": 78,
+  "submodelGroupYearTypeFrom": 2010,
+  "submodelGroupYearTypeTo": 2014,
+  "submodelGroupName": "5시리즈 그란 투리스모(6세대)",
+  "submodelId": 536,
+  "submodelName": "5시리즈 그란 투리스모(6세대)",
+  "submodelNameEng": "5 Series Gran Turismo(6th)",
+  "yearType": "2011",
+  "availableYearTypes": ["2011", "2012"],
+  "submodelImageUrl": "http://file.carisyou.com/newcar/color/4055_bmw_granturismo2011_100.jpg",
+  "gradeId": 387,
+  "gradeName": "GT 35i",
+  "fuelType": "Gasoline",
+  "displacement": "2979",
+  "trimId": 15000,
+  "trimName": "GT x드라이브 익스클루시브",
+  "salesCode": 3,
+  "bodySize": "F",
+  "bodyStyle": "HATCHBACK",
+  "transmission": "A/T",
+  "price": 107300000,
+  "priceUnit": 0,
+  "isRecommended": false,
+  "releaseDate": "2010-12-01",
+  "discontinuedDate": "2012-08-31",
+  "carTypeCode": 1,
+  "spec": {
+    "imageUrl": "http://file.carisyou.com/newcar/spec/4055_bmw_granturismo2011_spec0.jpg",
+    "fuel": {
+      "name": "연비",
+      "fuel": {
+        "name": "연료",
+        "value": "Gasoline",
+        "unit": "",
+        "multiValues": "Gasoline,Diesel,LPG,Gasoline/Hybrid,Diesel/Hybrid,Ethanol,Gasoline/Hydrogen,Hydrogen,Electric,Fuel cell,LPG/Hybrid"
+      },
+      "mileage": {
+        "name": "연비",
+        "value": "9.0",
+        "unit": "km/ℓ",
+        "multiValues": ""
+      },
+      "mileageGrade": {
+        "name": "연비등급",
+        "value": "4",
+        "unit": "등급",
+        "multiValues": ""
+      },
+      "carbonEmission": {
+        "name": "이산화탄소 배출량",
+        "value": "0",
+        "unit": "g/km",
+        "multiValues": ""
+      }
+    },
+    "dimension": {
+      "name": "치수",
+      "length": {
+        "name": "전장",
+        "value": "4998",
+        "unit": "mm",
+        "multiValues": ""
+      },
+      "width": {
+        "name": "전폭",
+        "value": "1901",
+        "unit": "mm",
+        "multiValues": ""
+      },
+      "height": {
+        "name": "전고",
+        "value": "1559",
+        "unit": "mm",
+        "multiValues": ""
+      },
+      "frontTrack": {
+        "name": "윤거 전",
+        "value": "1611",
+        "unit": "mm",
+        "multiValues": ""
+      },
+      "rearTrack": {
+        "name": "윤거 후",
+        "value": "1654",
+        "unit": "mm",
+        "multiValues": ""
+      },
+      "wheelbase": {
+        "name": "축거",
+        "value": "3070",
+        "unit": "mm",
+        "multiValues": ""
+      },
+      "weight": {
+        "name": "공차중량",
+        "value": "1995",
+        "unit": "kg",
+        "multiValues": ""
+      },
+      "numOfSeats": {
+        "name": "승차정원",
+        "value": "5",
+        "unit": "명",
+        "multiValues": ""
+      },
+      "gasTankVolume": {
+        "name": "연료탱크용량",
+        "value": "70",
+        "unit": "ℓ",
+        "multiValues": ""
+      },
+      "trunkVolume": {
+        "name": "트렁크용량",
+        "value": "440",
+        "unit": "ℓ",
+        "multiValues": ""
+      }
+    },
+    "engine": {
+      "name": "엔진",
+      "displacement": {
+        "name": "배기량",
+        "value": "2979",
+        "unit": "cc",
+        "multiValues": ""
+      },
+      "maxSpeed": {
+        "name": "최고속도",
+        "value": "250",
+        "unit": "km/h",
+        "multiValues": ""
+      },
+      "engineType": {
+        "name": "엔진형식",
+        "value": "직렬 6기통 터보",
+        "unit": "",
+        "multiValues": ""
+      },
+      "maxPower": {
+        "name": "최고출력",
+        "value": "306",
+        "unit": "마력",
+        "multiValues": ""
+      },
+      "maxPowerRpm": {
+        "name": "최고출력회전수",
+        "value": "5800",
+        "unit": "rpm",
+        "multiValues": ""
+      },
+      "maxTorque": {
+        "name": "최대토크",
+        "value": "40.8",
+        "unit": "kg.m",
+        "multiValues": ""
+      },
+      "maxTorqueRpm": {
+        "name": "최대토크회전수",
+        "value": "5000",
+        "unit": "rpm",
+        "multiValues": ""
+      },
+      "acceleratingAbility": {
+        "name": "가속성능 0~100km",
+        "value": "6.3",
+        "unit": "s",
+        "multiValues": ""
+      },
+      "maxTorqueStartRpm": {
+        "name": "최대토크발생 시작회전수",
+        "value": "1200",
+        "unit": "rpm",
+        "multiValues": ""
+      },
+      "maxTorqueEndRpm": {
+        "name": "최대토크발생 종료회전수",
+        "value": "5000",
+        "unit": "rpm",
+        "multiValues": ""
+      },
+      "drivingMotorMaxPower": {
+        "name": "구동모터 최대출력",
+        "value": "0",
+        "unit": "kW",
+        "multiValues": ""
+      },
+      "drivingMotorMaxTorque": {
+        "name": "구동모터 최대토크",
+        "value": "0.0",
+        "unit": "Nm",
+        "multiValues": ""
+      },
+      "compositePower": {
+        "name": "합산출력",
+        "value": "0.0",
+        "unit": "마력",
+        "multiValues": ""
+      },
+      "enginePosition": {
+        "name": "엔진위치",
+        "value": "프런트",
+        "unit": "",
+        "multiValues": "프런트,미드쉽,리어"
+      }
+    },
+    "driving": {
+      "name": "구동",
+      "type": {
+        "name": "구동방식",
+        "value": "AWD",
+        "unit": "",
+        "multiValues": "2WD,4WD,AWD,FF,FR,RR,MR"
+      },
+      "frontTire": {
+        "name": "타이어 전",
+        "value": "245/45R19",
+        "unit": "",
+        "multiValues": ""
+      },
+      "steering": {
+        "name": "스티어링",
+        "value": "",
+        "unit": "",
+        "multiValues": "볼너트,랙앤피니언"
+      },
+      "frontBreak": {
+        "name": "전륜제동장치 형식",
+        "value": "V디스크",
+        "unit": "",
+        "multiValues": "V디스크,디스크,드럼"
+      },
+      "rearBreak": {
+        "name": "후륜제동장치 형식",
+        "value": "V디스크",
+        "unit": "",
+        "multiValues": "V디스크,디스크,드럼"
+      },
+      "frontSuspension": {
+        "name": "전륜서스펜션",
+        "value": "더블 위시본",
+        "unit": "",
+        "multiValues": ""
+      },
+      "rearSuspension": {
+        "name": "후륜서스펜션",
+        "value": "멀티링크 코일스프링",
+        "unit": "",
+        "multiValues": ""
+      },
+      "rearTire": {
+        "name": "타이어 후",
+        "value": "275/40R19",
+        "unit": "",
+        "multiValues": ""
+      },
+      "gearRatio": {
+        "name": "변속기 기어단수",
+        "value": "8",
+        "unit": "단",
+        "multiValues": ""
+      },
+      "powerSteering": {
+        "name": "파워스티어링 형식",
+        "value": "전동식",
+        "unit": "",
+        "multiValues": "유압식,전동식"
+      }
+    }
+  }
+}

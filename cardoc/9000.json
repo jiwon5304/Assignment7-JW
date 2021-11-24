@@ -1,0 +1,280 @@
+{
+  "brandId": 38,
+  "brandName": "르노삼성",
+  "brandNameEng": "Renaultsamsung",
+  "country": "KOR",
+  "isImported": false,
+  "brandImageUrl": "https://file.carisyou.com/upload/2017/02/16/FILE_201702160634355260.png",
+  "brandUrl": "http://www.renaultsamsungm.com/",
+  "modelId": 643,
+  "modelName": "SM5",
+  "submodelGroupId": 689,
+  "submodelGroupYearTypeFrom": 2005,
+  "submodelGroupYearTypeTo": 2007,
+  "submodelGroupName": "뉴 SM5(EX1)",
+  "submodelId": 1207,
+  "submodelName": "뉴 SM5(EX1)",
+  "submodelNameEng": "New SM5(EX1)",
+  "yearType": "2007",
+  "availableYearTypes": ["2005", "2006", "2007"],
+  "submodelImageUrl": "http://file.carisyou.com/upload/2019/07/24/FILE_201907241102284030.png",
+  "gradeId": 5222,
+  "gradeName": "2.0 가솔린",
+  "fuelType": "Gasoline",
+  "displacement": "1998",
+  "trimId": 9000,
+  "trimName": "PE",
+  "salesCode": 3,
+  "bodySize": "D",
+  "bodyStyle": "SEDAN",
+  "transmission": "M/T",
+  "price": 17760000,
+  "priceUnit": 0,
+  "isRecommended": false,
+  "releaseDate": "2007-01-01",
+  "discontinuedDate": "2008-01-01",
+  "carTypeCode": 1,
+  "spec": {
+    "imageUrl": "http://file.carisyou.com/newcar/spec/2827_renaultsamsung_newsm52007_spec0.gif",
+    "fuel": {
+      "name": "연비",
+      "fuel": {
+        "name": "연료",
+        "value": "Gasoline",
+        "unit": "",
+        "multiValues": "Gasoline,Diesel,LPG,Gasoline/Hybrid,Diesel/Hybrid,Ethanol,Gasoline/Hydrogen,Hydrogen,Electric,Fuel cell,LPG/Hybrid"
+      },
+      "mileage": {
+        "name": "연비",
+        "value": "12.3",
+        "unit": "km/ℓ",
+        "multiValues": ""
+      },
+      "mileageGrade": {
+        "name": "연비등급",
+        "value": "3",
+        "unit": "등급",
+        "multiValues": ""
+      },
+      "carbonEmission": {
+        "name": "이산화탄소 배출량",
+        "value": "",
+        "unit": "g/km",
+        "multiValues": ""
+      }
+    },
+    "dimension": {
+      "name": "치수",
+      "length": {
+        "name": "전장",
+        "value": "4895",
+        "unit": "mm",
+        "multiValues": ""
+      },
+      "width": {
+        "name": "전폭",
+        "value": "1785",
+        "unit": "mm",
+        "multiValues": ""
+      },
+      "height": {
+        "name": "전고",
+        "value": "1475",
+        "unit": "mm",
+        "multiValues": ""
+      },
+      "frontTrack": {
+        "name": "윤거 전",
+        "value": "1540",
+        "unit": "mm",
+        "multiValues": ""
+      },
+      "rearTrack": {
+        "name": "윤거 후",
+        "value": "1545",
+        "unit": "mm",
+        "multiValues": ""
+      },
+      "wheelbase": {
+        "name": "축거",
+        "value": "2775",
+        "unit": "mm",
+        "multiValues": ""
+      },
+      "weight": {
+        "name": "공차중량",
+        "value": "1450",
+        "unit": "kg",
+        "multiValues": ""
+      },
+      "numOfSeats": {
+        "name": "승차정원",
+        "value": "5",
+        "unit": "명",
+        "multiValues": ""
+      },
+      "gasTankVolume": {
+        "name": "연료탱크용량",
+        "value": "0",
+        "unit": "ℓ",
+        "multiValues": ""
+      },
+      "trunkVolume": {
+        "name": "트렁크용량",
+        "value": "450",
+        "unit": "ℓ",
+        "multiValues": ""
+      }
+    },
+    "engine": {
+      "name": "엔진",
+      "displacement": {
+        "name": "배기량",
+        "value": "1998",
+        "unit": "cc",
+        "multiValues": ""
+      },
+      "maxSpeed": {
+        "name": "최고속도",
+        "value": "0",
+        "unit": "km/h",
+        "multiValues": ""
+      },
+      "engineType": {
+        "name": "엔진형식",
+        "value": "I4 DOHC",
+        "unit": "",
+        "multiValues": ""
+      },
+      "maxPower": {
+        "name": "최고출력",
+        "value": "140",
+        "unit": "마력",
+        "multiValues": ""
+      },
+      "maxPowerRpm": {
+        "name": "최고출력회전수",
+        "value": "5800",
+        "unit": "rpm",
+        "multiValues": ""
+      },
+      "maxTorque": {
+        "name": "최대토크",
+        "value": "18.8",
+        "unit": "kg.m",
+        "multiValues": ""
+      },
+      "maxTorqueRpm": {
+        "name": "최대토크회전수",
+        "value": "4800",
+        "unit": "rpm",
+        "multiValues": ""
+      },
+      "acceleratingAbility": {
+        "name": "가속성능 0~100km",
+        "value": "0.0",
+        "unit": "s",
+        "multiValues": ""
+      },
+      "maxTorqueStartRpm": {
+        "name": "최대토크발생 시작회전수",
+        "value": "4800",
+        "unit": "rpm",
+        "multiValues": ""
+      },
+      "maxTorqueEndRpm": {
+        "name": "최대토크발생 종료회전수",
+        "value": "4800",
+        "unit": "rpm",
+        "multiValues": ""
+      },
+      "drivingMotorMaxPower": {
+        "name": "구동모터 최대출력",
+        "value": "0",
+        "unit": "kW",
+        "multiValues": ""
+      },
+      "drivingMotorMaxTorque": {
+        "name": "구동모터 최대토크",
+        "value": "0.0",
+        "unit": "Nm",
+        "multiValues": ""
+      },
+      "compositePower": {
+        "name": "합산출력",
+        "value": "0.0",
+        "unit": "마력",
+        "multiValues": ""
+      },
+      "enginePosition": {
+        "name": "엔진위치",
+        "value": "프론트",
+        "unit": "",
+        "multiValues": "프런트,미드쉽,리어"
+      }
+    },
+    "driving": {
+      "name": "구동",
+      "type": {
+        "name": "구동방식",
+        "value": "FF",
+        "unit": "",
+        "multiValues": "2WD,4WD,AWD,FF,FR,RR,MR"
+      },
+      "frontTire": {
+        "name": "타이어 전",
+        "value": "205/65R16",
+        "unit": "",
+        "multiValues": ""
+      },
+      "steering": {
+        "name": "스티어링",
+        "value": "랙 앤 피니언",
+        "unit": "",
+        "multiValues": "볼너트,랙앤피니언"
+      },
+      "frontBreak": {
+        "name": "전륜제동장치 형식",
+        "value": "디스크",
+        "unit": "",
+        "multiValues": "V디스크,디스크,드럼"
+      },
+      "rearBreak": {
+        "name": "후륜제동장치 형식",
+        "value": "디스크",
+        "unit": "",
+        "multiValues": "V디스크,디스크,드럼"
+      },
+      "frontSuspension": {
+        "name": "전륜서스펜션",
+        "value": "맥퍼슨 스트럿",
+        "unit": "",
+        "multiValues": ""
+      },
+      "rearSuspension": {
+        "name": "후륜서스펜션",
+        "value": "멀티링크 코일스프링",
+        "unit": "",
+        "multiValues": ""
+      },
+      "rearTire": {
+        "name": "타이어 후",
+        "value": "205/65R16",
+        "unit": "",
+        "multiValues": ""
+      },
+      "gearRatio": {
+        "name": "변속기 기어단수",
+        "value": "0",
+        "unit": "단",
+        "multiValues": ""
+      },
+      "powerSteering": {
+        "name": "파워스티어링 형식",
+        "value": "유압식",
+        "unit": "",
+        "multiValues": "유압식,전동식"
+      }
+    }
+  }
+}
