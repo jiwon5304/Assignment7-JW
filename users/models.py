@@ -3,13 +3,13 @@ from django.contrib.auth.models import BaseUserManager, AbstractBaseUser
 
 
 class UserManager(BaseUserManager):
-    def create_user(self, email, name, password=None):
-        if not email:
-            raise ValueError('Users must have an email address')
+    def create_user(self, userid, password=None, **extra_field):
+        if not userid:
+            raise ValueError('Users must have an userid')
 
         user = self.model(
-            email = self.normalize_email(email),
-            name  = name,
+            userid = userid,
+            **extra_field
         )
 
         user.set_password(password)
@@ -18,20 +18,15 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser):
-    email      = models.EmailField(max_length=255, unique=True)
-    name       = models.CharField(max_length=20)
+    userid     = models.CharField(max_length=20, unique=True)
     is_admin   = models.BooleanField(default=False)
-    username   = models.CharField(max_length=10, default='', null=True, blank=True)
-    first_name = models.CharField(max_length=10, default='', null=True, blank=True)
-    last_name  = models.CharField(max_length=10, default='', null=True, blank=True)
 
     objects = UserManager()
 
-    USERNAME_FIELD  = 'email'
-    REQUIRED_FIELDS = ['name']
+    USERNAME_FIELD  = 'userid'
 
     def __str__(self):
-        return self.email
+        return self.userid
 
     def has_perm(self, perm, obj=None):
         return True
