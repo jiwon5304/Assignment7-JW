@@ -14,7 +14,7 @@ def BatchTask():
     
     for trimid in [5000,9000,11000,15000]:
 
-        # if not Tire.objects.filter(trimid = trimid).exists():
+        if not Tire.objects.filter(trimid = trimid).exists():
             url = "https://dev.mycar.cardoc.co.kr/v1/trim/" + str(trimid)
 
             response    = urllib.request.urlopen(url)
