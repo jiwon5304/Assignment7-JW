@@ -8,7 +8,7 @@
 ## Members
 | 이름 | github                                    | 담당 기능      |
 |-----|--------------------------------------------|------------ |
-|박지원 |[jiwon5304](https://github.com/jiwon5304)   | 유저생성, dbupload, 유저 별 타이어 저장 및 조회, 배포     |
+|박지원 |[jiwon5304](https://github.com/jiwon5304)   | 회원 생성, 타이어 정보 저장(db_upload), 회원이 소유한 타이어 저장 및 조회, 배포 |
 
 ## 과제 내용
 <details>
@@ -119,36 +119,45 @@
 </details>
 
 ## 사용 기술 및 tools
-> - Back-End :  <img src="https://img.shields.io/badge/Python 3.8-3776AB?style=for-the-badge&logo=Python&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/Django 3.2-092E20?style=for-the-badge&logo=Django&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/PostgreSQL 14.0-0064a5?style=for-the-badge&logo=PostgreSQL&logoColor=white"/>
-> - Deploy : <img src="https://img.shields.io/badge/AWS_EC2-232F3E?style=for-the-badge&logo=Amazon&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/Docker-0052CC?style=for-the-badge&logo=Docker&logoColor=white"/>
+> - Back-End :  <img src="https://img.shields.io/badge/Python 3.8-3776AB?style=for-the-badge&logo=Python&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/Django 3.2-092E20?style=for-the-badge&logo=Django&logoColor=white"/>&nbsp;
+> - Deploy : <img src="https://img.shields.io/badge/AWS_EC2-232F3E?style=for-the-badge&logo=Amazon&logoColor=white"/>&nbsp;
 > - ETC :  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white"/>&nbsp;
 
+
 ## 모델링
+<p align="center"><img src="https://user-images.githubusercontent.com/80395324/143776378-79d8d576-aa18-40b1-b171-fa3694198c9b.png" width="900" height="400"/></p>
+
 
 
 ## API
 - [Postman Doc](https://documenter.getpostman.com/view/17234812/UVJcjvpx)
 
 
-## 서버구조 및 아키텍쳐
-
-- 
-
-### Django 내부
-
+## 내부 구조
+<p align="center"><img src="https://user-images.githubusercontent.com/80395324/143780485-6a24884e-b9de-4f71-8397-7c90cf2dab8a.png" width="600" height="400"/></p>
 
 
 ## 구현 기능
 
 ### 사용자 생성 API
-- 
+- userid 와 password 입력을 기본으로 회원가입을 진행합니다.
+- userid 는 unique 설정을 하여 회원을 구별하도록 구현하였고, 암호화하여 비밀번호를 데이터베이스에 저장합니다.
+- is_admin는 False를 기본으로 하며, True로 입력 시 관리자로 간주합니다.
+- simple-jwt를 사용하여 토큰을 발급합니다.
+
+### 타이어 스펙 저장 기능
+- db_upload.py라는 파일을 실행시킴으로써, 조회 시 필요한 front_tire 와 rear_tire 의 폭 & 편평비 & 휠사이즈 정보만 저장하도록 구현하였습니다
 
 ### 사용자가 소유한 타이어 정보를 저장하는 API
-- 
+- 회원가입 시 저장된 is_admin이라는 정보를 기준으로 관리자를 구분하여, 관리자만 정보를 저장하는 요청을 보내도록 하였습니다.
+- 5개가 넘는 요청에 대해서는 에러를 반환하도록 기능을 구현하였습니다.
+- 유저와 유저가 소유한 타이어의 정보가 중복으로 데이터베이스에 입력되지 않도록 기능을 구현하였습니다.
+- 요청된 데이터 중 가입된 유저나 등록되어 있는 타이어가 아니면 에러를 반환하도록 기능을 구현하였습니다.
+- 5개의 이하의 요청 중에서 1개라도 잘못된 요청이 들어올 시 데이터베이스에 입력되지 않도록 트랜잭션 기능을 사용하여 구현하였습니다.
 
 ### 사용자가 소유한 타이어 정보 조회 API
-- 
-
+- 관리자가 아닌 일반 회원도 타이어 정보 조회가 가능합니다.
+- 등록되지 않은 유저에 대한 정보 조회를 요청 시 에러를 반환하도록 기능을 구현하였습니다.
 
 
 ## 배포정보
@@ -158,30 +167,82 @@
 |API 주소 | http://3.37.217.41:8000/ |    |
 
 
+
 ## API TEST 방법
+1. 옆에 링크로 접속합니다. [Postman Doc](https://documenter.getpostman.com/view/17234812/UVJcjvpx)
 
-<details>
-  <summary><b>API TEST 방법 자세히 보기</b></summary>
-<div markdown="1">
+2. 아래의 사진과 같이 클릭하여 이동합니다.
+![image](https://user-images.githubusercontent.com/80395324/143778139-2f2a0d15-daf3-41a6-b200-c0a3c7f85fb3.png)
 
-  
-</div>
-</details>
+3. 아래의 사진과 같이 서버의 주소가 올바른지 확인 후 테스트를 진행합니다.
+![image](https://user-images.githubusercontent.com/80395324/143778281-8f1f4fee-2b98-4954-b65c-6a4bc2ad60ea.png)
+
+
 
 ## 설치 및 실행 방법
-<details>
- <summary><b>설치 및 실행 방법 자세히 보기</b></summary>
-<div markdown="1">
-  
-###  Local 개발 및 테스트용
+### Local 개발 및 테스트용
 
-###  배포용 
-  
-</div>
-</details>
+1. 해당프로젝트를 clone 하고, 프로젝트 폴더로 들어간다.
+    ```bash
+    git clone https://github.com/Wanted-Preonboarding-Backend-1st-G5/Assignment7-JW.git
+    cd Assignment7-JW
+    ```
+    
+2. 가상 환경을 생성하고 프로젝트에 사용한 python package를 받는다.
+    ```bash
+    conda create -n cardoc python=3.8 
+    conda actvate cardoc
+    pip install -r requirements.txt
+    ```
+
+3. 데이터베이스에 테이블을 생성한다.
+    ```bash
+    python manage.py migrate
+    ```
+
+4. 서버를 실행한다.
+    ```bash
+    python manage.py runserver 0:8000
+    ```
 
 ## 폴더 구조
 ```bash
+├── README.md
+├── cardoc
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── db.sqlite3
+├── db_upload.py
+├── manage.py
+├── my_settings.py
+├── requirements.txt
+├── tires
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   ├── __init__.py
+│   ├── models.py
+│   ├── permissions.py
+│   ├── serializers.py
+│   ├── tests.py
+│   └── views.py
+└── users
+    ├── __init__.py
+    ├── admin.py
+    ├── apps.py
+    ├── migrations
+    │   ├── 0001_initial.py
+    │   ├── __init__.py
+    ├── models.py
+    ├── serializers.py
+    ├── tests.py
+    ├── urls.py
+    └── views.py
 ```
 
 
