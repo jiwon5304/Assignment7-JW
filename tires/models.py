@@ -1,5 +1,6 @@
 from django.db                  import models
 
+
 class Tire(models.Model):
     trimid             = models.IntegerField()
     front_width        = models.IntegerField()
