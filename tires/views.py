@@ -26,6 +26,7 @@ class UserTireViewSet(GenericViewSet):
 
         try:
             for data in request.data:
+                print(data)
                 user = User.objects.get(userid=data['id'])
                 tire = Tire.objects.get(trimid=data['trimId'])
                 
