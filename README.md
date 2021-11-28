@@ -127,7 +127,7 @@
 
 
 ## API
-- [Postman Doc]()
+- [Postman Doc](https://documenter.getpostman.com/view/17234812/UVJcjvpx)
 
 
 ## 서버구조 및 아키텍쳐
