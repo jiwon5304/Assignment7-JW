@@ -20,6 +20,7 @@ from rest_framework.routers         import SimpleRouter
 
 from tires.views                    import UserTireViewSet
 
+
 app_name = 'tires'
 
 router = SimpleRouter(trailing_slash=False)

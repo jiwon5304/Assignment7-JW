@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib       import Path
-from my_settings   import SECRET_KEY
 from datetime      import timedelta
+from my_settings   import SECRET_KEY
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
