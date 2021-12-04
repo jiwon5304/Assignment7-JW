@@ -225,7 +225,7 @@
 │   ├── apps.py
 │   ├── migrations
 │   │   ├── 0001_initial.py
-│   │   ├── __init__.py
+│   │   └── __init__.py
 │   ├── models.py
 │   ├── permissions.py
 │   ├── serializers.py
@@ -237,7 +237,7 @@
     ├── apps.py
     ├── migrations
     │   ├── 0001_initial.py
-    │   ├── __init__.py
+    │   └── __init__.py
     ├── models.py
     ├── serializers.py
     ├── tests.py
